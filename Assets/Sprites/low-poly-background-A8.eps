@@ -1,0 +1,771 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: tzunghaor svg2eps
+%%Pages: 1
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 3
+%%DocumentNeededResources: procset Adobe_Illustrator_AI5 1.3 0
+%AI5_FileFormat 3
+%%BoundingBox: 0 0 3721 2658
+%%HiResBoundingBox: 0 0 3720.750000 2657.250000
+%AI5_ArtSize: 3720.750000 2657.250000
+%%EndComments
+
+%%BeginProlog
+100 dict begin
+/tzung_eps_state save def
+/dict_count countdictstack def
+/op_count count 1 sub def
+/Adobe_Illustrator_AI5 where
+{ pop } {
+    /tzung_strokergb [ 0 0 0 ] def
+    /tzung_compound 0 def
+    /tzung_closeop { S } def
+    /tzung_fillrule 0 def
+
+    /*u { /tzung_compound 1 def newpath /tzung_fillrule 0 def } bind def
+    /*U { /tzung_compound 0 def tzung_closeop  } bind def
+    /u {} bind def
+    /U {} bind def
+
+    /q { clipsave } bind def
+    /Q { cliprestore } bind def
+    /W { clip } bind def
+
+    /Lb { 10 {pop} repeat } bind def
+    /Ln {pop} bind def
+    /LB {} bind def
+
+
+    /w { setlinewidth } bind def
+    /J { setlinecap } bind def
+    /j { setlinejoin } bind def
+    /M { setmiterlimit } bind def
+    /d { setdash } bind def
+
+    /m { tzung_compound 0 eq { newpath /tzung_fillrule 0 def } if moveto } bind def
+    /l { lineto } bind def
+    /c { curveto } bind def
+
+    /XR { /tzung_fillrule exch def } bind def
+    /Xa { setrgbcolor } bind def
+    /XA { 3 array astore /tzung_strokergb exch def } bind def
+
+
+    /F { tzung_compound 0 eq {
+             tzung_fillrule 0 eq { fill } { eofill } ifelse
+         } {
+             /tzung_closeop {F} def
+         } ifelse } bind def
+    /f { closepath F } bind def
+    /S { tzung_compound 0 eq {
+            tzung_strokergb aload pop setrgbcolor stroke
+        } {
+             /tzung_closeop {S} def
+        } ifelse } bind def
+    /s { closepath S } bind def
+
+    /B { tzung_compound 0 eq {
+            gsave
+            tzung_fillrule 0 eq { fill } { eofill } ifelse
+            grestore
+            tzung_strokergb aload pop setrgbcolor stroke
+         } {
+             /tzung_closeop {B} def
+        } ifelse } bind def
+    /b { closepath B } bind def
+    /H { tzung_compound 0 eq {
+        }{
+            /tzung_closeop {H} def
+        } ifelse} bind def
+    /h { closepath } bind def
+    /N { tzung_compound 0 eq {
+        }{
+            /tzung_closeop {N} def
+        } ifelse} bind def
+    /n { closepath N } bind def
+
+
+    /Bn { /dict_gradients exch dict def} bind def
+    /Bd { /tmp_ngradstop exch def /tmp_shadingtype exch def } bind def  %leaves gradient name in stack
+    /BD { ]  % this handles only stops that have CMYKRGB color definitions
+        % linear gradient stops must be in reverse order, radials in normal order
+        aload
+        pop
+        /tmp_boundaries tmp_ngradstop array def
+        /tmp_colors tmp_ngradstop array def
+        tmp_shadingtype 0 eq {
+            0 1 tmp_ngradstop 1 sub   % for i=0; i<= number of gradient stops - 1; i++
+        } {
+            tmp_ngradstop 1 sub -1 0   % for i=number of gradient stops - 1; i >= 0; i++
+        } ifelse
+        {
+            /loopvar exch def
+            100 div
+            tmp_boundaries  loopvar
+            3 -1 roll put    %  obj array i => array i obj
+            pop % assume gradient middle is always 50
+            pop % assume color type is always 2 (CMYKRGB)
+            3 array astore
+            tmp_colors loopvar
+            3 -1 roll put
+            pop pop pop pop % drop CMYK values
+        } for
+
+        tmp_ngradstop 2 eq {
+            /tmp_function 5 dict def
+            tmp_boundaries 0 get tmp_boundaries 1 get 2 array astore
+            tmp_function /Domain 3 -1 roll put
+            tmp_function /FunctionType 2 put
+            tmp_function /C0  tmp_colors 0 get put
+            tmp_function /C1 tmp_colors 1 get put
+            tmp_function /N 1 put
+
+        } {
+            /tmp_functions tmp_ngradstop 1 sub array def
+
+            0 1 tmp_ngradstop 2 sub {
+                /loopvar exch def
+                /tmp_function 5 dict def
+                tmp_function /Domain [0 1]  put
+                tmp_function /FunctionType 2 put
+                tmp_function /C0  tmp_colors loopvar get put
+                tmp_function /C1 tmp_colors loopvar 1 add get put
+                tmp_function /N 1 put
+                tmp_functions loopvar tmp_function put
+            } for
+
+
+            /tmp_function 5 dict def
+            tmp_boundaries 0 get tmp_boundaries tmp_ngradstop 1 sub get 2 array astore
+            tmp_function /Domain 3 -1 roll  put
+            tmp_function /FunctionType 3 put
+            tmp_boundaries aload pop
+            tmp_ngradstop -1 roll pop pop % remove first and last bounds
+            tmp_ngradstop 2 sub array astore
+            tmp_function /Bounds 3 -1 roll put
+            tmp_function /Functions tmp_functions put
+
+            tmp_ngradstop 1 sub {
+                0 1
+            } repeat
+            tmp_ngradstop 1 sub 2 mul array astore
+            tmp_function /Encode 3 -1 roll put
+
+        } ifelse
+
+        /tmp_shading 6 dict def
+        tmp_shadingtype 0 eq {
+            tmp_shading /ShadingType 2 put
+            tmp_shading /Coords [ 0 0 1 0 ] put
+        } {
+            tmp_shading /ShadingType 3 put
+            tmp_shading /Coords [ 0 0 0 0 0 1 ] put
+        } ifelse
+        tmp_shading /ColorSpace /DeviceRGB put
+        tmp_shading /Domain [0 1] put
+        tmp_shading /Extend[ true true] put
+        tmp_shading /Function tmp_function put
+
+        /tmp_gradient 2 dict def
+        tmp_gradient /PatternType 2 put
+        tmp_gradient /Shading tmp_shading put
+
+        dict_gradients exch tmp_gradient put % gradient's name is on the top of the stack from Bd operator
+
+    } bind def
+    /Lb { 10 { pop } repeat } bind def
+    /Ln { pop } bind def
+    /Bb { } bind def
+
+    /Bg {
+        6 { pop } repeat
+        gsave
+        4 2 roll
+        translate
+        exch
+        rotate
+        dup scale
+         exch pop % remove Bg flag
+        dict_gradients exch get % now gradient name is on top of the stack
+         [ 1 0 0 1 0 0 ]
+        makepattern
+        /pattern_tmp exch def
+        grestore
+        pattern_tmp  setpattern
+         gsave % save for after pattern fil for possible stroke
+    } def
+    /BB { grestore 2 eq { s } if } bind def
+    /LB { } bind def
+
+} ifelse
+
+%%EndProlog
+
+%%BeginSetup
+/Adobe_Illustrator_AI5 where
+{
+    pop
+    Adobe_Illustrator_AI5 /initialize get exec
+} if
+
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox: 0 0 3720 2657
+%%EndPageSetup
+
+
+%AI5_BeginLayer
+1 1 1 1 0 0 0 0 0 0 Lb
+(Layer 1) Ln
+
+u
+
+ 
+%AI3_Note: path5004
+ 0.996078 0.992157 0.533333 Xa 0.749999 w 1 J 1 j 2924.516758 
+2657.250057 m 3050.528099 2491.778918 l 3131.396289 2657.250057 l 
+2924.516758 2657.250057 l f
+
+
+ 
+%AI3_Note: path5006
+ 0.996078 1.000000 0.537255 Xa 0.749999 w 1 J 1 j 891.119577 
+2657.250057 m 1079.824124 2509.641437 l 1127.307303 2657.250057 l 
+891.119577 2657.250057 l f
+
+
+ 
+%AI3_Note: path5008
+ 0.996078 0.984314 0.533333 Xa 0.749999 w 1 J 1 j 1521.873856 
+2657.250057 m 1750.009742 2430.466608 l 1884.334474 2657.250057 l 
+1521.873856 2657.250057 l f
+
+
+ 
+%AI3_Note: path5010
+ 0.996078 0.949020 0.521569 Xa 0.749999 w 1 J 1 j 2647.139306 
+2657.250057 m 2605.041416 2402.481115 l 3050.528099 2491.778918 l 
+2924.516758 2657.250057 l 2647.139306 2657.250057 l f
+
+
+ 
+%AI3_Note: path5012
+ 0.996078 0.964706 0.525490 Xa 0.749999 w 1 J 1 j 3365.200418 
+2657.250057 m 3436.032828 2352.563628 l 3693.919823 2657.250057 l 
+3365.200418 2657.250057 l f
+
+
+ 
+%AI3_Note: path5014
+ 0.996078 0.992157 0.533333 Xa 0.749999 w 1 J 1 j 3131.396289 
+2657.250057 m 3050.528099 2491.778918 l 3436.032828 2352.563628 l 
+3365.200418 2657.250057 l 3131.396289 2657.250057 l f
+
+
+ 
+%AI3_Note: path5016
+ 0.996078 0.976471 0.529412 Xa 0.749999 w 1 J 1 j 2364.413161 
+2657.250057 m 2605.041416 2402.481115 l 2647.139306 2657.250057 l 
+2364.413161 2657.250057 l f
+
+
+ 
+%AI3_Note: path5018
+ 0.996078 0.984314 0.533333 Xa 0.749999 w 1 J 1 j 80.148700 
+2657.250057 m 413.562846 2358.609728 l 473.538082 2657.250057 l 
+80.148700 2657.250057 l f
+
+
+ 
+%AI3_Note: path5020
+ 0.996078 0.964706 0.525490 Xa 0.749999 w 1 J 1 j 1127.307303 
+2657.250057 m 1079.824124 2509.641437 l 1750.009742 2430.466608 l 
+1521.873856 2657.250057 l 1127.307303 2657.250057 l f
+
+
+ 
+%AI3_Note: path5022
+ 0.996078 0.952941 0.525490 Xa 0.749999 w 1 J 1 j 473.538082 
+2657.250057 m 413.562846 2358.609728 l 1079.824124 2509.641437 l 
+891.119577 2657.250057 l 473.538082 2657.250057 l f
+
+
+ 
+%AI3_Note: path5024
+ 0.992157 0.905882 0.509804 Xa 0.749999 w 1 J 1 j 3693.919823 
+2657.250057 m 3436.032828 2352.563628 l 3720.750028 2312.434597 l 
+3720.750028 2657.250057 l 3693.919823 2657.250057 l f
+
+
+ 
+%AI3_Note: path5026
+ 0.992157 0.917647 0.513725 Xa 0.749999 w 1 J 1 j 0.000028 2657.250057 
+m 0.000028 2340.383694 l 413.562846 2358.609728 l 80.148700 
+2657.250057 l 0.000028 2657.250057 l f
+
+
+ 
+%AI3_Note: path5028
+ 0.996078 0.976471 0.529412 Xa 0.749999 w 1 J 1 j 2117.993441 
+2657.250057 m 2203.410670 2108.571470 l 2605.041416 2402.481115 l 
+2364.413161 2657.250057 l 2117.993441 2657.250057 l f
+
+
+ 
+%AI3_Note: path5030
+ 0.992157 0.917647 0.513725 Xa 0.749999 w 1 J 1 j 1884.334474 
+2657.250057 m 1750.009742 2430.466608 l 2203.410670 2108.571470 l 
+2117.993441 2657.250057 l 1884.334474 2657.250057 l f
+
+
+ 
+%AI3_Note: path5032
+ 0.992157 0.866667 0.498039 Xa 0.749999 w 1 J 1 j 1233.575024 
+2087.480034 m 1750.012832 2430.468025 l 1079.827781 2509.640729 l 
+1233.575024 2087.480034 l f
+
+
+ 
+%AI3_Note: path5034
+ 0.988235 0.741176 0.462745 Xa 0.749999 w 1 J 1 j 1233.575024 
+2087.480034 m 1719.243688 1906.493745 l 1750.012832 2430.468025 l 
+1233.575024 2087.480034 l f
+
+
+ 
+%AI3_Note: path5036
+ 0.988235 0.772549 0.470588 Xa 0.749999 w 1 J 1 j 1719.243688 
+1906.493745 m 2203.407552 2108.574021 l 1750.012832 2430.468025 l 
+1719.243688 1906.493745 l f
+
+
+ 
+%AI3_Note: path5038
+ 0.988235 0.819608 0.486275 Xa 0.749999 w 1 J 1 j 2737.367496 
+1878.790299 m 3050.529232 2491.781185 l 2605.037731 2402.483383 l 
+2737.367496 1878.790299 l f
+
+
+ 
+%AI3_Note: path5040
+ 0.988235 0.749020 0.462745 Xa 0.749999 w 1 J 1 j 2203.407552 
+2108.574021 m 2737.367496 1878.790299 l 2605.037731 2402.483383 l 
+2203.407552 2108.574021 l f
+
+
+ 
+%AI3_Note: path5042
+ 0.992157 0.874510 0.501961 Xa 0.749999 w 1 J 1 j 413.566219 
+2358.607914 m 1233.575024 2087.480034 l 1079.827781 2509.640729 l 
+413.566219 2358.607914 l f
+
+
+ 
+%AI3_Note: path5044
+ 0.988235 0.788235 0.474510 Xa 0.749999 w 1 J 1 j 3436.032828 
+2352.563628 m 3720.750028 2029.629252 l 3720.750028 2312.434597 l 
+3436.032828 2352.563628 l f
+
+
+ 
+%AI3_Note: path5046
+ 0.988235 0.745098 0.462745 Xa 0.749999 w 1 J 1 j 413.566219 
+2358.607914 m 824.069831 1699.491531 l 1233.575024 2087.480034 l 
+413.566219 2358.607914 l f
+
+
+ 
+%AI3_Note: path5048
+ 0.984314 0.694118 0.447059 Xa 0.749999 w 1 J 1 j 3436.032828 
+2352.563628 m 3449.259001 1759.679252 l 3720.750028 1787.635378 l 
+3720.750028 2029.629252 l 3436.032828 2352.563628 l f
+
+
+ 
+%AI3_Note: path5050
+ 0.988235 0.729412 0.458824 Xa 0.749999 w 1 J 1 j 413.562846 
+2358.609728 m 0.000028 2340.383694 l 0.000028 2014.375626 l 229.639893 
+1671.369635 l 413.562846 2358.609728 l f
+
+
+ 
+%AI3_Note: path5052
+ 0.980392 0.560784 0.411765 Xa 0.749999 w 1 J 1 j 0.000028 2014.375626 
+m 0.000028 1759.998886 l 229.639893 1671.369635 l 0.000028 2014.375626 
+l f
+
+
+ 
+%AI3_Note: path5054
+ 0.988235 0.784314 0.474510 Xa 0.749999 w 1 J 1 j 2737.367496 
+1878.790299 m 3436.029710 2352.560963 l 3050.529232 2491.781185 l 
+2737.367496 1878.790299 l f
+
+
+ 
+%AI3_Note: path5056
+ 0.984314 0.670588 0.443137 Xa 0.749999 w 1 J 1 j 2737.367496 
+1878.790299 m 3449.262686 1759.679677 l 3436.029710 2352.560963 l 
+2737.367496 1878.790299 l f
+
+
+ 
+%AI3_Note: path5058
+ 0.984314 0.654902 0.435294 Xa 0.749999 w 1 J 1 j 229.640460 
+1671.366261 m 824.069831 1699.491531 l 413.566219 2358.607914 l 
+229.640460 1671.366261 l f
+
+
+ 
+%AI3_Note: path5060
+ 0.980392 0.576471 0.415686 Xa 0.749999 w 1 J 1 j 1933.446384 
+1514.567721 m 2203.407552 2108.574021 l 1719.243688 1906.493745 l 
+1933.446384 1514.567721 l f
+
+
+ 
+%AI3_Note: path5062
+ 0.980392 0.517647 0.396078 Xa 0.749999 w 1 J 1 j 3067.882650 
+1463.942168 m 3449.262686 1759.679677 l 2737.367496 1878.790299 l 
+3067.882650 1463.942168 l f
+
+
+ 
+%AI3_Note: path5064
+ 0.980392 0.592157 0.419608 Xa 0.749999 w 1 J 1 j 2203.407552 
+2108.574021 m 2406.824279 1442.566926 l 2737.367496 1878.790299 l 
+2203.407552 2108.574021 l f
+
+
+ 
+%AI3_Note: path5066
+ 0.976471 0.498039 0.392157 Xa 0.749999 w 1 J 1 j 1933.446384 
+1514.567721 m 2406.824279 1442.566926 l 2203.407552 2108.574021 l 
+1933.446384 1514.567721 l f
+
+
+ 
+%AI3_Note: path5068
+ 0.980392 0.584314 0.415686 Xa 0.749999 w 1 J 1 j 1358.732852 
+1358.191061 m 1719.243688 1906.493745 l 1233.575024 2087.480034 l 
+1358.732852 1358.191061 l f
+
+
+ 
+%AI3_Note: path5070
+ 0.980392 0.537255 0.403922 Xa 0.749999 w 1 J 1 j 824.069831 
+1699.491531 m 1358.732852 1358.191061 l 1233.575024 2087.480034 l 
+824.069831 1699.491531 l f
+
+
+ 
+%AI3_Note: path5072
+ 0.976471 0.458824 0.380392 Xa 0.749999 w 1 J 1 j 1358.732852 
+1358.191061 m 1933.446384 1514.567721 l 1719.243688 1906.493745 l 
+1358.732852 1358.191061 l f
+
+
+ 
+%AI3_Note: path5074
+ 0.976471 0.482353 0.388235 Xa 0.749999 w 1 J 1 j 0.000028 1759.998886 
+m 0.000028 1481.422747 l 229.639893 1671.369635 l 0.000028 1759.998886 
+l f
+
+
+ 
+%AI3_Note: path5076
+ 0.976471 0.415686 0.368627 Xa 0.749999 w 1 J 1 j 229.640460 
+1671.366261 m 552.182039 1206.314259 l 824.069831 1699.491531 l 
+229.640460 1671.366261 l f
+
+
+ 
+%AI3_Note: path5078
+ 0.976471 0.462745 0.380392 Xa 0.749999 w 1 J 1 j 2406.824279 
+1442.566926 m 3067.882650 1463.942168 l 2737.367496 1878.790299 l 
+2406.824279 1442.566926 l f
+
+
+ 
+%AI3_Note: path5080
+ 0.976471 0.498039 0.392157 Xa 0.749999 w 1 J 1 j 3720.750028 
+1787.635378 m 3449.259001 1759.679252 l 3720.750028 1452.150920 l 
+3720.750028 1787.635378 l f
+
+
+ 
+%AI3_Note: path5082
+ 0.945098 0.325490 0.356863 Xa 0.749999 w 1 J 1 j 2406.824279 
+1442.566926 m 2797.330741 1007.187201 l 3067.882650 1463.942168 l 
+2406.824279 1442.566926 l f
+
+
+ 
+%AI3_Note: path5084
+ 0.945098 0.325490 0.356863 Xa 0.749999 w 1 J 1 j 1933.446384 
+1514.567721 m 2179.402639 986.937059 l 2406.824279 1442.566926 l 
+1933.446384 1514.567721 l f
+
+
+ 
+%AI3_Note: path5086
+ 0.933333 0.317647 0.360784 Xa 0.749999 w 1 J 1 j 1670.671183 
+963.452586 m 1933.446384 1514.567721 l 1358.732852 1358.191061 l 
+1670.671183 963.452586 l f
+
+
+ 
+%AI3_Note: path5088
+ 0.964706 0.345098 0.349020 Xa 0.749999 w 1 J 1 j 824.069831 
+1699.491531 m 1094.326398 954.874382 l 1358.732852 1358.191061 l 
+824.069831 1699.491531 l f
+
+
+ 
+%AI3_Note: path5090
+ 0.952941 0.329412 0.356863 Xa 0.749999 w 1 J 1 j 552.182039 
+1206.314259 m 1094.326398 954.874382 l 824.069831 1699.491531 l 
+552.182039 1206.314259 l f
+
+
+ 
+%AI3_Note: path5092
+ 0.972549 0.368627 0.352941 Xa 0.749999 w 1 J 1 j 229.639893 
+1671.369635 m 0.000028 1481.422747 l 0.000028 1252.081059 l 552.182322 
+1206.313125 l 229.639893 1671.369635 l f
+
+
+ 
+%AI3_Note: path5094
+ 0.976471 0.415686 0.368627 Xa 0.749999 w 1 J 1 j 3449.259001 
+1759.679252 m 3067.882083 1463.945399 l 3720.750028 1278.177261 l 
+3720.750028 1452.150920 l 3449.259001 1759.679252 l f
+
+
+ 
+%AI3_Note: path5096
+ 0.901961 0.286275 0.368627 Xa 0.749999 w 1 J 1 j 1670.671183 
+963.452586 m 2179.402639 986.937059 l 1933.446384 1514.567721 l 
+1670.671183 963.452586 l f
+
+
+ 
+%AI3_Note: path5098
+ 0.901961 0.286275 0.368627 Xa 0.749999 w 1 J 1 j 3067.882083 
+1463.945399 m 3330.013110 851.512711 l 3720.750028 1093.033879 l 
+3720.750028 1278.177261 l 3067.882083 1463.945399 l f
+
+
+ 
+%AI3_Note: path5100
+ 0.905882 0.290196 0.368627 Xa 0.749999 w 1 J 1 j 2179.402639 
+986.937059 m 2797.330741 1007.187201 l 2406.824279 1442.566926 l 
+2179.402639 986.937059 l f
+
+
+ 
+%AI3_Note: path5102
+ 0.901961 0.286275 0.368627 Xa 0.749999 w 1 J 1 j 2797.330741 
+1007.187201 m 3330.010842 851.513845 l 3067.882650 1463.942168 l 
+2797.330741 1007.187201 l f
+
+
+ 
+%AI3_Note: path5104
+ 0.890196 0.274510 0.372549 Xa 0.749999 w 1 J 1 j 1094.326398 
+954.874382 m 1670.671183 963.452586 l 1358.732852 1358.191061 l 
+1094.326398 954.874382 l f
+
+
+ 
+%AI3_Note: path5106
+ 0.831373 0.223529 0.392157 Xa 0.749999 w 1 J 1 j 3720.750028 
+1093.033879 m 3330.013110 851.512711 l 3720.750028 672.822598 l 
+3720.750028 1093.033879 l f
+
+
+ 
+%AI3_Note: path5108
+ 0.823529 0.219608 0.392157 Xa 0.749999 w 1 J 1 j 2325.837318 
+540.307447 m 2797.330741 1007.187201 l 2179.402639 986.937059 l 
+2325.837318 540.307447 l f
+
+
+ 
+%AI3_Note: path5110
+ 0.886275 0.270588 0.376471 Xa 0.749999 w 1 J 1 j 0.000028 1252.081059 
+m 0.000028 797.867324 l 552.182322 1206.313125 l 0.000028 1252.081059 
+l f
+
+
+ 
+%AI3_Note: path5112
+ 0.800000 0.200000 0.400000 Xa 0.749999 w 1 J 1 j 552.182322 
+1206.313125 m 0.000028 797.867324 l 0.000028 575.981747 l 336.814955 
+506.697336 l 552.182322 1206.313125 l f
+
+
+ 
+%AI3_Note: path5114
+ 0.784314 0.184314 0.403922 Xa 0.749999 w 1 J 1 j 1751.123786 
+453.962722 m 2179.402639 986.937059 l 1670.671183 963.452586 l 
+1751.123786 453.962722 l f
+
+
+ 
+%AI3_Note: path5116
+ 0.796078 0.192157 0.400000 Xa 0.749999 w 1 J 1 j 2797.330741 
+1007.187201 m 3030.925957 350.320988 l 3330.010842 851.513845 l 
+2797.330741 1007.187201 l f
+
+
+ 
+%AI3_Note: path5118
+ 0.839216 0.231373 0.388235 Xa 0.749999 w 1 J 1 j 336.812149 
+506.697620 m 1094.326398 954.874382 l 552.182039 1206.314259 l 
+336.812149 506.697620 l f
+
+
+ 
+%AI3_Note: path5120
+ 0.772549 0.172549 0.407843 Xa 0.749999 w 1 J 1 j 1751.123786 
+453.962722 m 2325.837318 540.307447 l 2179.402639 986.937059 l 
+1751.123786 453.962722 l f
+
+
+ 
+%AI3_Note: path5122
+ 0.760784 0.160784 0.411765 Xa 0.749999 w 1 J 1 j 336.812149 
+506.697620 m 958.973115 408.118280 l 1094.326398 954.874382 l 
+336.812149 506.697620 l f
+
+
+ 
+%AI3_Note: path5124
+ 0.807843 0.203922 0.400000 Xa 0.749999 w 1 J 1 j 1094.326398 
+954.874382 m 1751.123786 453.962722 l 1670.671183 963.452586 l 
+1094.326398 954.874382 l f
+
+
+ 
+%AI3_Note: path5126
+ 0.772549 0.172549 0.407843 Xa 0.749999 w 1 J 1 j 2325.837318 
+540.307447 m 3030.925957 350.320988 l 2797.330741 1007.187201 l 
+2325.837318 540.307447 l f
+
+
+ 
+%AI3_Note: path5128
+ 0.729412 0.133333 0.419608 Xa 0.749999 w 1 J 1 j 958.973115 
+408.118280 m 1751.123786 453.962722 l 1094.326398 954.874382 l 
+958.973115 408.118280 l f
+
+
+ 
+%AI3_Note: path5130
+ 0.682353 0.094118 0.435294 Xa 0.749999 w 1 J 1 j 0.000028 575.981747 
+m 0.000028 100.220197 l 336.814955 506.697336 l 0.000028 575.981747 l 
+f
+
+
+ 
+%AI3_Note: path5132
+ 0.682353 0.094118 0.435294 Xa 0.749999 w 1 J 1 j 2325.839302 
+540.307731 m 1751.121518 453.960170 l 2022.728936 -0.000119 l 
+2085.495022 -0.000119 l 2325.839302 540.307731 l f
+
+
+ 
+%AI3_Note: path5134
+ 0.760784 0.160784 0.411765 Xa 0.749999 w 1 J 1 j 3330.013110 
+851.512711 m 3030.928791 350.324673 l 3720.750028 517.271132 l 
+3720.750028 672.822598 l 3330.013110 851.512711 l f
+
+
+ 
+%AI3_Note: path5136
+ 0.658824 0.074510 0.443137 Xa 0.749999 w 1 J 1 j 2325.839302 
+540.307731 m 2643.047778 -0.000119 l 2745.528441 -0.000119 l 
+3030.928791 350.324673 l 2325.839302 540.307731 l f
+
+
+ 
+%AI3_Note: path5138
+ 0.658824 0.074510 0.443137 Xa 0.749999 w 1 J 1 j 1751.121518 
+453.960170 m 958.972406 408.119414 l 1172.799369 -0.000119 l 
+1288.992829 -0.000119 l 1751.121518 453.960170 l f
+
+
+ 
+%AI3_Note: path5140
+ 0.662745 0.078431 0.439216 Xa 0.749999 w 1 J 1 j 336.814955 
+506.697336 m 491.974646 -0.000119 l 599.185822 -0.000119 l 958.972406 
+408.119414 l 336.814955 506.697336 l f
+
+
+ 
+%AI3_Note: path5142
+ 0.670588 0.082353 0.439216 Xa 0.749999 w 1 J 1 j 3720.750028 
+517.271132 m 3030.928791 350.324673 l 3249.086810 -0.000119 l 
+3331.030464 -0.000119 l 3720.750028 363.594217 l 3720.750028 
+517.271132 l f
+
+
+ 
+%AI3_Note: path5144
+ 0.607843 0.027451 0.458824 Xa 0.749999 w 1 J 1 j 3720.750028 
+363.594217 m 3331.030464 -0.000119 l 3720.750028 -0.000119 l 
+3720.750028 363.594217 l f
+
+
+ 
+%AI3_Note: path5146
+ 0.627451 0.047059 0.450980 Xa 0.749999 w 1 J 1 j 2325.839302 
+540.307731 m 2085.495022 -0.000119 l 2643.047778 -0.000119 l 
+2325.839302 540.307731 l f
+
+
+ 
+%AI3_Note: path5148
+ 0.600000 0.019608 0.458824 Xa 0.749999 w 1 J 1 j 336.814955 
+506.697336 m 0.000028 100.220197 l 0.000028 -0.000119 l 491.974646 
+-0.000119 l 336.814955 506.697336 l f
+
+
+ 
+%AI3_Note: path5150
+ 0.623529 0.039216 0.450980 Xa 0.749999 w 1 J 1 j 3030.928791 
+350.324673 m 2745.528441 -0.000119 l 3249.086810 -0.000119 l 
+3030.928791 350.324673 l f
+
+
+ 
+%AI3_Note: path5152
+ 0.623529 0.039216 0.450980 Xa 0.749999 w 1 J 1 j 958.972406 
+408.119414 m 599.185822 -0.000119 l 1172.799369 -0.000119 l 958.972406 
+408.119414 l f
+
+
+ 
+%AI3_Note: path5154
+ 0.627451 0.047059 0.450980 Xa 0.749999 w 1 J 1 j 1751.121518 
+453.960170 m 1288.992829 -0.000119 l 2022.728936 -0.000119 l 
+1751.121518 453.960170 l f
+
+
+U
+
+LB
+%AI5_EndLayer
+
+
+%%Trailer
+showpage
+count op_count sub {pop} repeat
+countdictstack dict_count sub {end} repeat
+tzung_eps_state restore
+end
+%%EOF
+

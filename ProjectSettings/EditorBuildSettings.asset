@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 22d5efede70c6dc48801d928fe871d3d
+  - enabled: 1
+    path: Assets/Scenes/TriangleBoss.unity
+    guid: 550dfb738c7b7f047ac9bb78854eba54
+  - enabled: 1
+    path: Assets/Scenes/SquareBoss.unity
+    guid: 6f5f7ba93d3382a4c90769d2920ff77e
+  - enabled: 1
+    path: Assets/Scenes/OctagonBoss.unity
+    guid: f296dc2acfc1a4c4297e6dccfdc20577
+  - enabled: 1
+    path: Assets/Scenes/CircleBoss.unity
+    guid: 1acce6feec7a249469cb25272547ef2c
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: b77719fbe8909e441998078683a96c6f
+  m_configObjects: {}
